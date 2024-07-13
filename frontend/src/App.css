@@ -41,6 +41,7 @@ ul {
   list-style: none;
 }
 
+
 .primary__btn {
   background: var(--secondary-color) !important;
   border: none !important;
