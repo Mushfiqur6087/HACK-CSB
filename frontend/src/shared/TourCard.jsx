@@ -19,8 +19,10 @@ const TourCard = ({ tour }) => {
         </Card>
         <CardBody>
             <div className='card__top d-flex align-items-center justify-content-between'>
-                <span className='tour__location d-flex align-items-center gap-1'> <i class="ri-map-pin-line"></i>{city}</span>
-                <span className='tour__location d-flex align-items-center gap-1'> <i class="ri-star-fill"></i>{avgRating === 0 ? null : avgRating}{totalRating === 0 ? ("Not rated") : (<span>{"("}{reviews.length}{")"}</span>)}</span>
+                <span className='tour__location d-flex align-items-center gap-1'> <i class="ri-map-pin-line"></i>{city}
+                </span>
+                <span className='tour__location d-flex align-items-center gap-1'> <i class="ri-star-s-fill"></i>{avgRating === 0 ? null : avgRating}{totalRating === 0 ? ("Not rated") : (<span>{"("}{reviews.length}{")"}</span>)}
+                </span>
 
             </div>
             <h5 className='tour__title'><Link to={`/tours/${id}`}>{title}</Link> </h5>
